@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import { BrowserRouter,Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter,Routes, Route} from "react-router-dom";
 import Alert from './components/Alert';
 import About from './components/About';
 
@@ -41,7 +41,7 @@ function App() {
       </div>
       <Routes>
         <Route exact path="about" element={<About mode= {mode}></About>} />
-        <Route exact path="/" element={<TextForm heading="Enter the text to analyse" mode={mode} showAlert={showAlert}></TextForm>} />
+        <Route exact path="/" element={<TextForm heading="Try Textutils - Word Counter | Character Counter | Text Editor" mode={mode} showAlert={showAlert}></TextForm>} />
       </Routes>     
     </BrowserRouter>
   );
